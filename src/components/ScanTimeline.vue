@@ -74,7 +74,12 @@ const onDialogOpen = () => {
 <template>
   <v-dialog v-model="dialog" @update:model-value="onDialogOpen">
     <template v-slot:activator="{ props: activatorProps }">
-      <v-btn v-bind="activatorProps" color="orange" text="View Timeline" variant="outlined"></v-btn>
+      <v-btn
+        v-bind="activatorProps"
+        color="orange"
+        text="View Scan Timeline"
+        variant="outlined"
+      ></v-btn>
     </template>
 
     <v-card>
