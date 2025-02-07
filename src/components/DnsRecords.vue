@@ -68,7 +68,14 @@ const formattedKeys = computed(() => {
       item-value="key"
       hover
       @click:row="(_, { item }) => openDetails(item)"
-    />
+    >
+      <template v-slot:item.resolved_hosts="{ item }">
+        <span>
+          {{ item.resolved_hosts.split(',').slice(0, 2).join(', ') }}
+          <span v-if="item.resolved_hosts.split(',').length > 2">...</span>
+        </span>
+      </template>
+    </v-data-table>
 
     <!-- Right Side Expansion Panel -->
     <v-navigation-drawer v-model="isPanelOpen" location="right" width="400" temporary>
@@ -84,10 +91,20 @@ const formattedKeys = computed(() => {
         <v-card-text>
           <v-list dense>
             <v-list-item v-for="(value, key) in selectedRecord" :key="key">
-              <v-list-item-title class="font-weight-bold text-orange"
-                >{{ formattedKeys(key) }}:</v-list-item-title
-              >
-              <v-list-item-subtitle>{{ value }}</v-list-item-subtitle>
+              <v-list-item-title class="font-weight-bold text-orange">
+                {{ formattedKeys(key) }}:
+              </v-list-item-title>
+              <v-list-item-subtitle>
+                <template v-if="key === 'resolved_hosts'">
+                  <!-- Ensure each IP appears on a new line -->
+                  <v-row v-for="(ip, index) in value.split(',')" :key="index">
+                    <v-col cols="12">{{ ip.trim() }}</v-col>
+                  </v-row>
+                </template>
+                <template v-else>
+                  {{ value }}
+                </template>
+              </v-list-item-subtitle>
             </v-list-item>
           </v-list>
         </v-card-text>

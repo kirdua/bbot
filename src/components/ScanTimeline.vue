@@ -27,7 +27,7 @@ const initializeChart = async () => {
           label: 'Record Discoveries',
           data: props.dnsRecords.map((_, index) => index + 1),
           borderColor: 'orange',
-          fill: false,
+          fill: true,
           tension: 0.4,
           pointRadius: 3,
         },
