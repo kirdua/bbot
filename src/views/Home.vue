@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue'
 import mj1 from '@/assets/images/mj1.png'
 import ScanTimeline from '@/components/ScanTimeline.vue'
-import DnsRecordsTable from '@/components/DNSRecords.vue'
+import DnsRecordsTable from '@/components/DnsRecords.vue'
 
 const scanData = ref(null)
 const dnsRecords = ref([])
