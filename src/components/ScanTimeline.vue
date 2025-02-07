@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineProps, nextTick } from 'vue'
+import { ref, nextTick } from 'vue'
 import Chart from 'chart.js/auto'
 import moment from 'moment'
 
