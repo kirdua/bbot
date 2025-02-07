@@ -1,0 +1,2116 @@
+{
+  "scanData": {
+    "id": "SCAN:cd01246a7f50daa36b08c5f0d0de06ac2be36b53",
+    "name": "delicious_carolyn",
+    "target": {
+      "seeds": ["evilcorp.com"],
+      "whitelist": ["evilcorp.com"],
+      "blacklist": [],
+      "strict_scope": false,
+      "hash": "3dda111d40a4cf217cf531757a13dda34d414e35",
+      "seed_hash": "f64d0c5b244bea6bbd35a5bb3e54ee8d5a2dae87",
+      "whitelist_hash": "f64d0c5b244bea6bbd35a5bb3e54ee8d5a2dae87",
+      "blacklist_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "scope_hash": "eba48b57c6fa8c3fa270cf3a108cf839e27cecda"
+    },
+    "preset": {
+      "description": "delicious_carolyn",
+      "config": {
+        "dns": {
+          "threads": 25,
+          "brute_threads": 1000
+        },
+        "modules": {
+          "nuclei": {
+            "tags": "tech"
+          }
+        }
+      },
+      "exclude_modules": ["dnsbrute", "dnsbrute_mutations"],
+      "flags": ["subdomain-enum"],
+      "modules": ["fingerprintx", "nuclei", "wappalyzer"],
+      "output_modules": ["subdomains"]
+    },
+    "started_at": "2025-02-06T12:43:07.251084",
+    "status": "RUNNING"
+  },
+  "dnsRecords": [
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorp.com",
+      "resolved_hosts": ["195.159.30.12", "2001:489a:3103::5a0"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:03.653767+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-b2.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:34::6b", "244.196.181.174"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:09.508944+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-b4.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:38::6b", "66.214.167.12"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:09.511296+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-b1.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:32::6b", "222.198.33.114"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:09.488142+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "icpbounce.com",
+      "resolved_hosts": [
+        "41.145.214.226",
+        "104.81.216.157",
+        "2606:4700:3031::ac43:c73f",
+        "2606:4700:3037::6815:2a17"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:09.524161+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-b1.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:32::6b", "222.198.33.114"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:09.513149+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx5.evilcorp.com",
+      "resolved_hosts": ["238.205.219.94", "2607:7700:0:27:0:2:c01f:f220"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:09.491587+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx2.evilcorp.com",
+      "resolved_hosts": ["216.69.121.1902", "2607:7700:0:27:0:2:c01f:f2b6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:09.500734+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx6.evilcorp.com",
+      "resolved_hosts": ["13.92.203.131", "2607:7700:0:27:0:2:c01f:f221"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:09.503708+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx3.evilcorp.com",
+      "resolved_hosts": ["174.228.98.135", "2607:7700:0:27:0:2:c01f:f2b7"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:09.506712+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "spf-b.evilcorp.com",
+      "resolved_hosts": [],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:09.523080+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "spf-a.evilcorp.com",
+      "resolved_hosts": [],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:09.519213+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorp.com",
+      "resolved_hosts": ["195.159.30.12", "2001:489a:3103::5a0"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.179878+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx2.evilcorp.com",
+      "resolved_hosts": ["216.69.121.1902", "2607:7700:0:27:0:2:c01f:f2b6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.512487+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx2.evilcorp.com",
+      "resolved_hosts": ["216.69.121.1902", "2607:7700:0:27:0:2:c01f:f2b6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.489491+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx6.evilcorp.com",
+      "resolved_hosts": ["13.92.203.131", "2607:7700:0:27:0:2:c01f:f221"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.533594+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx4.evilcorp.com",
+      "resolved_hosts": ["108.107.224.195", "2607:7700:0:27:0:2:c01f:f21f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.530158+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx3.evilcorp.com",
+      "resolved_hosts": ["174.228.98.135", "2607:7700:0:27:0:2:c01f:f2b7"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.575563+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx5.evilcorp.com",
+      "resolved_hosts": ["238.205.219.94", "2607:7700:0:27:0:2:c01f:f220"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.579236+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx3.evilcorp.com",
+      "resolved_hosts": ["174.228.98.135", "2607:7700:0:27:0:2:c01f:f2b7"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.574034+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx5.evilcorp.com",
+      "resolved_hosts": ["238.205.219.94", "2607:7700:0:27:0:2:c01f:f220"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.628096+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx6.evilcorp.com",
+      "resolved_hosts": ["13.92.203.131", "2607:7700:0:27:0:2:c01f:f221"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.577710+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx1.evilcorp.com",
+      "resolved_hosts": ["45.50.6.75", "2607:7700:0:27:0:2:c01f:f2b5"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.597030+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "o1.ptr6968.evilcorp.com",
+      "resolved_hosts": ["190.199.26.121", "2607:7700:0:27:0:2:a759:46c1"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.655115+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx6.evilcorp.com",
+      "resolved_hosts": ["13.92.203.131", "2607:7700:0:27:0:2:c01f:f221"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.752268+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx4.evilcorp.com",
+      "resolved_hosts": ["108.107.224.195", "2607:7700:0:27:0:2:c01f:f21f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.749995+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx2.evilcorp.com",
+      "resolved_hosts": ["216.69.121.1902", "2607:7700:0:27:0:2:c01f:f2b6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.749614+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600adfs.evilcorp.com",
+      "resolved_hosts": ["219.83.175.205", "2607:7700:0:27:0:2:c01f:f291"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.749209+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600-sbc-teams.evilcorp.com",
+      "resolved_hosts": ["143.184.246.86", "2607:7700:0:27:0:2:c01f:f2b8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.752678+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600mail.evilcorp.com",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.751527+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx1.evilcorp.com",
+      "resolved_hosts": ["45.50.6.75", "2607:7700:0:27:0:2:c01f:f2b5"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.835516+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mconnect.evilcorp.com",
+      "resolved_hosts": ["218.172.146.160", "2607:7700:0:27:0:2:c01f:f2ca"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.750758+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "as274-gw-216.evilcorp.com",
+      "resolved_hosts": ["156.107.83.77", "2607:7700:0:27:0:2:c01f:f3d8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.835085+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "vpn-test.evilcorp.com",
+      "resolved_hosts": ["130.157.229.234", "2607:7700:0:27:0:2:c01f:f2c8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.834678+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mfatest.evilcorp.com",
+      "resolved_hosts": ["252.94.41.89", "2607:7700:0:27:0:2:c01f:f28f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.836818+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "send.evilcorp.com",
+      "resolved_hosts": ["67.84.247.196", "2607:7700:0:27:0:2:c01f:f2a6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.834266+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx1.evilcorp.com",
+      "resolved_hosts": ["45.50.6.75", "2607:7700:0:27:0:2:c01f:f2b5"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.044224+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "perappvpn.evilcorp.com",
+      "resolved_hosts": ["214.94.6.178", "2607:7700:0:27:0:2:c01f:f2d1"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.750385+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx5.evilcorp.com",
+      "resolved_hosts": ["238.205.219.94", "2607:7700:0:27:0:2:c01f:f220"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.940080+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "borgcust.evilcorp.com",
+      "resolved_hosts": ["218.94.171.217", "2607:7700:0:27:0:2:c01f:f2e8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.751904+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600send.evilcorp.com",
+      "resolved_hosts": ["137.91.102.229", "2607:7700:0:27:0:2:c01f:f2b0"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.833449+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624mail.evilcorp.com",
+      "resolved_hosts": ["233.11.201.238", "2607:7700:0:27:0:2:c01f:f232"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.835923+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600auth.evilcorp.com",
+      "resolved_hosts": ["69.86.253.138", "2607:7700:0:27:0:2:c01f:f290"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.833874+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624auth.evilcorp.com",
+      "resolved_hosts": ["144.192.47.95", "2607:7700:0:27:0:2:c01f:f22c"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.753065+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx3.evilcorp.com",
+      "resolved_hosts": ["174.228.98.135", "2607:7700:0:27:0:2:c01f:f2b7"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.941412+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "staging.evilcorp.com",
+      "resolved_hosts": ["2001:489a:3403::5e6", "68.91.93.88"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.751125+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "patches.evilcorp.com",
+      "resolved_hosts": ["2607:7700:0:27:0:2:3212:210a", "65.146.109.104"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.939716+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "o1.ptr6968.evilcorp.com",
+      "resolved_hosts": ["190.199.26.121", "2607:7700:0:27:0:2:a759:46c1"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.059457+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "geoevent.evilcorp.com",
+      "resolved_hosts": ["178.253.100.124", "2607:7700:0:27:0:2:c01f:f2f0"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.836356+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "connect-west.evilcorp.com",
+      "resolved_hosts": ["130.157.229.234", "2607:7700:0:27:0:2:c01f:f2c8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.837187+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "connect-east.evilcorp.com",
+      "resolved_hosts": ["156.107.83.77", "2607:7700:0:27:0:2:c01f:f3d8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.938208+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "oob.evilcorp.com",
+      "resolved_hosts": ["66.86.63.143", "2607:7700:0:27:0:2:c01f:f25d"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.938598+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "heartofgold2.evilcorp.com",
+      "resolved_hosts": ["110.183.149.170", "2607:7700:0:27:0:2:c01f:f2d9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.939351+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "auth.evilcorp.com",
+      "resolved_hosts": [
+        "55.136.60.139",
+        "161.187.210.130",
+        "2607:7700:0:27:0:2:c01f:f2e0",
+        "2607:7700:0:27:0:2:c01f:f2e1"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.060407+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ch-dlp-pov.evilcorp.com",
+      "resolved_hosts": ["2607:7700:0:27:0:2:226e:a490", "150.21.136.151"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.061980+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "tech-test.evilcorp.com",
+      "resolved_hosts": ["2607:7700:0:27:0:2:34f4:5674", "143.106.235.143"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.062365+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624-sbc-teams.evilcorp.com",
+      "resolved_hosts": ["15.19.215.204", "2607:7700:0:27:0:2:c01f:f222"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.061194+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "customer.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.938959+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "supplierportal.evilcorp.com",
+      "resolved_hosts": ["67.84.247.196", "2607:7700:0:27:0:2:c01f:f2a6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.941788+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "odyssey-east.evilcorp.com",
+      "resolved_hosts": ["236.169.51.101", "2607:7700:0:27:0:2:c01f:f3d1"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.940640+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "stargate.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.059912+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "returns.evilcorp.com",
+      "resolved_hosts": ["domains.returnly.com"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.976616+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "sip.evilcorp.com",
+      "resolved_hosts": ["sipdir.online.gov.skypeforbusiness.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.981259+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "api.evilcorp.com",
+      "resolved_hosts": ["131.15.100.68", "2001:489a:3604::7c0", "api-evilcorp.azurefd.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.980866+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624adfs.evilcorp.com",
+      "resolved_hosts": ["74.20.50.197", "2607:7700:0:27:0:2:c01f:f22d"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.060793+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "odyssey-west.evilcorp.com",
+      "resolved_hosts": ["206.51.181.192", "2607:7700:0:27:0:2:c01f:f2cd"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:10.941038+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "stargate2.evilcorp.com",
+      "resolved_hosts": ["244.40.42.174", "2607:7700:0:27:0:2:c01f:f2d8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.061597+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "lyncdiscover.evilcorp.com",
+      "resolved_hosts": ["webdir.online.gov.skypeforbusiness.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.979345+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "launch.evilcorp.com",
+      "resolved_hosts": ["131.15.100.68", "2001:489a:3604::7c0", "launch-evilcorp.azurefd.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.977141+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "shop.evilcorp.com",
+      "resolved_hosts": ["177.43.29.245", "2620:127:f00f:e::", "shops.myshopify.com"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.981676+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "operations.evilcorp.com",
+      "resolved_hosts": [
+        "222.222.237.184",
+        "2001:489a:3403::5e7",
+        "operations-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.017246+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "rideshare.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.982094+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx4.evilcorp.com",
+      "resolved_hosts": ["108.107.224.195", "2607:7700:0:27:0:2:c01f:f21f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.167184+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "iss-sim.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.978370+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "gauntlet-staging.evilcorp.com",
+      "resolved_hosts": [
+        "114.179.130.250",
+        "64:ff9b::34f4:41ae",
+        "gauntlet-staging-evilcorpgcchigh.msappproxy.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.980451+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "api-rideshare.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.128079+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "url427.evilcorp.com",
+      "resolved_hosts": [
+        "17.23.57.136",
+        "53.39.51.98",
+        "99.208.195.188",
+        "252.229.249.39",
+        "120.123.190.199",
+        "215.58.174.252",
+        "106.73.215.30",
+        "153.207.243.62",
+        "86.240.200.66",
+        "227.101.13.117",
+        "191.68.199.184",
+        "129.192.44.247",
+        "188.168.230.136",
+        "81.186.9.134",
+        "205.160.79.156",
+        "74.156.73.131",
+        "2607:7700:0:27:0:2:a759:7634",
+        "2607:7700:0:27:0:2:a759:763d",
+        "2607:7700:0:27:0:2:a759:763e",
+        "2607:7700:0:27:0:2:a759:7653",
+        "2607:7700:0:27:0:2:a759:765f",
+        "2607:7700:0:27:0:2:a759:766d",
+        "2607:7700:0:27:0:2:a759:7678",
+        "2607:7700:0:27:0:2:a759:7680",
+        "2607:7700:0:27:0:2:a759:7b36",
+        "2607:7700:0:27:0:2:a759:7b3a",
+        "2607:7700:0:27:0:2:a759:7b3e",
+        "2607:7700:0:27:0:2:a759:7b42",
+        "2607:7700:0:27:0:2:a759:7b59",
+        "2607:7700:0:27:0:2:a759:7b5a",
+        "2607:7700:0:27:0:2:a759:7b7c",
+        "2607:7700:0:27:0:2:a759:7bcc",
+        "sendgrid.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.978850+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "tech-test.evilcorp.com",
+      "resolved_hosts": ["2607:7700:0:27:0:2:34f4:5674", "143.106.235.143"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.129710+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "operations.staging.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "operations-staging-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.014055+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "launch.staging.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "launch-staging-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.014892+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "api.staging.evilcorp.com",
+      "resolved_hosts": [
+        "222.222.237.184",
+        "2001:489a:3403::5e7",
+        "api-staging-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.015830+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "content.evilcorp.com",
+      "resolved_hosts": ["131.15.100.68", "2001:489a:3604::7c0", "content-evilcorp.azurefd.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.017623+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "www.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "evilcorp-com-endpoint-f8h4hnh9ardaaycw.z01.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.128457+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "content.staging.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "content-staging-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.129294+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "intune-ndes-test.evilcorp.com",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:34f4:41ae",
+        "114.179.130.250",
+        "intune-ndes-test-evilcorpgcchigh.msappproxy.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.127207+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "otto-results.evilcorp.com",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:34f4:41ae",
+        "114.179.130.250",
+        "otto-results-evilcorpgcchigh.msappproxy.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.015289+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "vault.operations.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "vault-operations-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.016296+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "warpdrive-customer.evilcorp.com",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:34f4:41ae",
+        "114.179.130.250",
+        "warpdrive-customer-evilcorpgcchigh.msappproxy.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.126745+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorpstash.customer.evilcorp.com",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:34f4:41ae",
+        "114.179.130.250",
+        "evilcorpstash-evilcorpgcchigh.msappproxy.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:11.979906+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "vault.operations.staging.evilcorp.com",
+      "resolved_hosts": [
+        "222.222.237.184",
+        "2001:489a:3403::5e7",
+        "vault-operations-staging-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.016867+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "www2.evilcorp.com",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:23a8:2dd1",
+        "227.140.6.99",
+        "ec2-35-168-45-209.compute-1.amazonaws.com"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.128826+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-e4.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:38::6e", "191.238.235.86"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:12.515589+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-e2.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:34::6e", "224.12.136.205"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:12.514638+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-e3.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:36::6e", "178.24.199.21"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:12.517089+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-e1.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:32::6e", "176.25.186.157"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:12.516334+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-e1.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:32::6e", "176.25.186.157"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:12.513648+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "o1.ptr6968.evilcorp.com",
+      "resolved_hosts": ["190.199.26.121", "2607:7700:0:27:0:2:a759:46c1"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:12.728864+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns-cloud-b3.googledomains.com",
+      "resolved_hosts": ["2001:4860:4802:36::6b", "163.118.169.78"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:09.514877+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx4.evilcorp.com",
+      "resolved_hosts": ["108.107.224.195", "2607:7700:0:27:0:2:c01f:f21f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:09.494635+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "api-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:12.957135+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx1.evilcorp.com",
+      "resolved_hosts": ["45.50.6.75", "2607:7700:0:27:0:2:c01f:f2b5"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:09.497675+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "launch-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.037197+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "operations-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.084769+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "shops.myshopify.com",
+      "resolved_hosts": ["177.43.29.245", "2620:127:f00f:e::"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.075610+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorp.map.fastly.net",
+      "resolved_hosts": ["191.179.108.44", "2607:7700:0:27:0:2:c7e8:4285"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.209432+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorp.map.fastly.net",
+      "resolved_hosts": ["191.179.108.44", "2607:7700:0:27:0:2:c7e8:4285"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.328556+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorp.map.fastly.net",
+      "resolved_hosts": ["191.179.108.44", "2607:7700:0:27:0:2:c7e8:4285"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.142306+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "gauntlet-staging-evilcorpgcchigh.msappproxy.us",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:34f4:41ae",
+        "114.179.130.250",
+        "70922d1c-6e01-4d95-82dd-55b449e38bd1.tenant.runtime.msappproxy.us"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.256866+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns10.dnsmadeeasy.com",
+      "resolved_hosts": ["5.80.24.189", "2600:1800:10::1"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.409252+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns12.dnsmadeeasy.com",
+      "resolved_hosts": ["94.202.162.5", "2600:1802:12::1"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.410580+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns15.dnsmadeeasy.com",
+      "resolved_hosts": ["54.94.47.69", "2600:1800:15::1"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.407270+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns14.dnsmadeeasy.com",
+      "resolved_hosts": ["227.65.166.95", "2600:1802:14::1"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.409920+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns13.dnsmadeeasy.com",
+      "resolved_hosts": ["223.142.16.55", "2600:1801:13::1"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.408594+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns10.dnsmadeeasy.com",
+      "resolved_hosts": ["5.80.24.189", "2600:1800:10::1"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.414723+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "customer.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:13.357028+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ns11.dnsmadeeasy.com",
+      "resolved_hosts": ["51.155.202.105", "2600:1801:11::1"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.407934+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "sendgrid.net",
+      "resolved_hosts": [
+        "17.23.57.136",
+        "53.39.51.98",
+        "99.208.195.188",
+        "252.229.249.39",
+        "120.123.190.199",
+        "215.58.174.252",
+        "106.73.215.30",
+        "153.207.243.62",
+        "86.240.200.66",
+        "227.101.13.117",
+        "191.68.199.184",
+        "129.192.44.247",
+        "188.168.230.136",
+        "81.186.9.134",
+        "205.160.79.156",
+        "74.156.73.131",
+        "2607:7700:0:27:0:2:a759:7634",
+        "2607:7700:0:27:0:2:a759:763d",
+        "2607:7700:0:27:0:2:a759:763e",
+        "2607:7700:0:27:0:2:a759:7653",
+        "2607:7700:0:27:0:2:a759:765f",
+        "2607:7700:0:27:0:2:a759:766d",
+        "2607:7700:0:27:0:2:a759:7678",
+        "2607:7700:0:27:0:2:a759:7680",
+        "2607:7700:0:27:0:2:a759:7b36",
+        "2607:7700:0:27:0:2:a759:7b3a",
+        "2607:7700:0:27:0:2:a759:7b3e",
+        "2607:7700:0:27:0:2:a759:7b42",
+        "2607:7700:0:27:0:2:a759:7b59",
+        "2607:7700:0:27:0:2:a759:7b5a",
+        "2607:7700:0:27:0:2:a759:7b7c",
+        "2607:7700:0:27:0:2:a759:7bcc"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.405194+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx2.sendgrid.net",
+      "resolved_hosts": [
+        "218.115.76.195",
+        "162.119.108.2",
+        "232.187.154.197",
+        "2607:7700:0:27:0:2:a759:732e",
+        "2607:7700:0:27:0:2:a759:7630",
+        "2607:7700:0:27:0:2:a759:7b32"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.406566+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx.sendgrid.net",
+      "resolved_hosts": [
+        "218.115.76.195",
+        "162.119.108.2",
+        "232.187.154.197",
+        "64:ff9b::a759:732e",
+        "64:ff9b::a759:7630",
+        "64:ff9b::a759:7b32"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.405896+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorp-com-endpoint-f8h4hnh9ardaaycw.z01.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.565854+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "api-staging-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.514127+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "content-staging-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.584790+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "staging.evilcorp.com",
+      "resolved_hosts": ["2001:489a:3403::5e6", "68.91.93.88"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:13.551000+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "launch-staging-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.512525+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "operations-staging-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.510236+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "content-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.558318+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorpstash-evilcorpgcchigh.msappproxy.us",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:34f4:41ae",
+        "114.179.130.250",
+        "70922d1c-6e01-4d95-82dd-55b449e38bd1.tenant.runtime.msappproxy.us"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.829709+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "intune-ndes-test-evilcorpgcchigh.msappproxy.us",
+      "resolved_hosts": [
+        "114.179.130.250",
+        "64:ff9b::34f4:41ae",
+        "70922d1c-6e01-4d95-82dd-55b449e38bd1.tenant.runtime.msappproxy.us"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.629251+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "otto-results-evilcorpgcchigh.msappproxy.us",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:34f4:41ae",
+        "114.179.130.250",
+        "70922d1c-6e01-4d95-82dd-55b449e38bd1.tenant.runtime.msappproxy.us"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.663072+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "vault-operations-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.781284+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "operations.evilcorp.com",
+      "resolved_hosts": [
+        "222.222.237.184",
+        "2001:489a:3403::5e7",
+        "operations-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:13.801008+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "warpdrive-customer-evilcorpgcchigh.msappproxy.us",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:34f4:41ae",
+        "114.179.130.250",
+        "70922d1c-6e01-4d95-82dd-55b449e38bd1.tenant.runtime.msappproxy.us"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.787059+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "ec2-35-168-45-209.compute-1.amazonaws.com",
+      "resolved_hosts": ["2607:7700:0:27:0:2:23a8:2dd1", "227.140.6.99"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.913671+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "vault-operations-staging-evilcorp.azurefd.us",
+      "resolved_hosts": ["222.222.237.184", "2001:489a:3403::5e7", "t-0001.msedge.azure.us"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:13.873397+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "operations.staging.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "operations-staging-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:13.901109+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600auth.evilcorp.com",
+      "resolved_hosts": ["69.86.253.138", "2607:7700:0:27:0:2:c01f:f290"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.283631+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "supplierportal.evilcorp.com",
+      "resolved_hosts": ["67.84.247.196", "2607:7700:0:27:0:2:c01f:f2a6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.352121+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mail.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.351729+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx3.evilcorp.com",
+      "resolved_hosts": ["174.228.98.135", "2607:7700:0:27:0:2:c01f:f2b7"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.459147+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "auth.evilcorp.com",
+      "resolved_hosts": [
+        "55.136.60.139",
+        "161.187.210.130",
+        "2607:7700:0:27:0:2:c01f:f2e0",
+        "2607:7700:0:27:0:2:c01f:f2e1"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.458013+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600adfs.evilcorp.com",
+      "resolved_hosts": ["219.83.175.205", "2607:7700:0:27:0:2:c01f:f291"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.460883+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx2.evilcorp.com",
+      "resolved_hosts": ["216.69.121.1902", "2607:7700:0:27:0:2:c01f:f2b6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.562784+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624auth.evilcorp.com",
+      "resolved_hosts": ["144.192.47.95", "2607:7700:0:27:0:2:c01f:f22c"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.564738+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx4.evilcorp.com",
+      "resolved_hosts": ["108.107.224.195", "2607:7700:0:27:0:2:c01f:f21f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.563642+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorpmail.usgovtrafficmanager.net",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296", "la600mail.evilcorp.com"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:24.808967+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx5.evilcorp.com",
+      "resolved_hosts": ["238.205.219.94", "2607:7700:0:27:0:2:c01f:f220"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.677759+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "api-rideshare.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.680594+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624adfs.evilcorp.com",
+      "resolved_hosts": ["74.20.50.197", "2607:7700:0:27:0:2:c01f:f22d"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.796267+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624-sbc-teams.evilcorp.com",
+      "resolved_hosts": ["15.19.215.204", "2607:7700:0:27:0:2:c01f:f222"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.796846+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "sip.evilcorp.com",
+      "resolved_hosts": ["sipdir.online.gov.skypeforbusiness.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.904230+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600mail.evilcorp.com",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.901585+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600-sbc-teams.evilcorp.com",
+      "resolved_hosts": ["143.184.246.86", "2607:7700:0:27:0:2:c01f:f2b8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.902502+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "lyncdiscover.evilcorp.com",
+      "resolved_hosts": ["webdir.online.gov.skypeforbusiness.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.902955+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "customer.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.012915+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "launch.staging.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "launch-staging-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.011242+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "stargate.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.147049+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "vpn-test.evilcorp.com",
+      "resolved_hosts": ["130.157.229.234", "2607:7700:0:27:0:2:c01f:f2c8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.010235+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx1.evilcorp.com",
+      "resolved_hosts": ["45.50.6.75", "2607:7700:0:27:0:2:c01f:f2b5"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.012050+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "www2.evilcorp.com",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:23a8:2dd1",
+        "227.140.6.99",
+        "ec2-35-168-45-209.compute-1.amazonaws.com"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.148381+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600send.evilcorp.com",
+      "resolved_hosts": ["137.91.102.229", "2607:7700:0:27:0:2:c01f:f2b0"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.264295+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "returns.evilcorp.com",
+      "resolved_hosts": ["domains.returnly.com"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.260478+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mconnect.evilcorp.com",
+      "resolved_hosts": ["218.172.146.160", "2607:7700:0:27:0:2:c01f:f2ca"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.261949+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx6.evilcorp.com",
+      "resolved_hosts": ["13.92.203.131", "2607:7700:0:27:0:2:c01f:f221"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.263479+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "rideshare.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.266158+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600mail.evilcorp.com",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.392987+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "operations.staging.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "operations-staging-evilcorp.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.367757+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "adfs.evilcorp.com",
+      "resolved_hosts": [
+        "74.20.50.197",
+        "2607:7700:0:27:0:2:c01f:f22d",
+        "evilcorpadfs.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.145977+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "connect2.evilcorp.com",
+      "resolved_hosts": ["206.51.181.192", "2607:7700:0:27:0:2:c01f:f2cd"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.265168+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "send.evilcorp.com",
+      "resolved_hosts": ["67.84.247.196", "2607:7700:0:27:0:2:c01f:f2a6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.366655+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624mail.evilcorp.com",
+      "resolved_hosts": ["233.11.201.238", "2607:7700:0:27:0:2:c01f:f232"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.368817+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mfatest.evilcorp.com",
+      "resolved_hosts": ["252.94.41.89", "2607:7700:0:27:0:2:c01f:f28f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.371675+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "autodiscover.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.369805+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600-egw.evilcorp.com",
+      "resolved_hosts": ["226.27.21.95", "2607:7700:0:27:0:2:c01f:f25a"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.258428+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorpmail.usgovtrafficmanager.net",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296", "la600mail.evilcorp.com"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:26.671659+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "o1.ptr6968.evilcorp.com",
+      "resolved_hosts": ["190.199.26.121", "2607:7700:0:27:0:2:a759:46c1"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.510460+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorpadfs.usgovtrafficmanager.net",
+      "resolved_hosts": ["74.20.50.197", "2607:7700:0:27:0:2:c01f:f22d", "la624adfs.evilcorp.com"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:26.498404+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "connect.evilcorp.com",
+      "resolved_hosts": [
+        "130.157.229.234",
+        "2607:7700:0:27:0:2:c01f:f2c8",
+        "gp-connect.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:25.375698+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624adfs.evilcorp.com",
+      "resolved_hosts": ["74.20.50.197", "2607:7700:0:27:0:2:c01f:f22d"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:26.896796+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "gp-connect.usgovtrafficmanager.net",
+      "resolved_hosts": ["130.157.229.234", "2607:7700:0:27:0:2:c01f:f2c8"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:26.999986+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "iss-sim.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.563245+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "shop.evilcorp.com",
+      "resolved_hosts": ["177.43.29.245", "2620:127:f00f:e::", "shops.myshopify.com"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:24.565494+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "autodiscover.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:36.734944+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mail.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:36.729700+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "sendgrid.net",
+      "resolved_hosts": [
+        "17.23.57.136",
+        "53.39.51.98",
+        "99.208.195.188",
+        "252.229.249.39",
+        "120.123.190.199",
+        "215.58.174.252",
+        "106.73.215.30",
+        "153.207.243.62",
+        "86.240.200.66",
+        "227.101.13.117",
+        "191.68.199.184",
+        "129.192.44.247",
+        "188.168.230.136",
+        "81.186.9.134",
+        "205.160.79.156",
+        "74.156.73.131",
+        "2607:7700:0:27:0:2:a759:7634",
+        "2607:7700:0:27:0:2:a759:763d",
+        "2607:7700:0:27:0:2:a759:763e",
+        "2607:7700:0:27:0:2:a759:7653",
+        "2607:7700:0:27:0:2:a759:765f",
+        "2607:7700:0:27:0:2:a759:766d",
+        "2607:7700:0:27:0:2:a759:7678",
+        "2607:7700:0:27:0:2:a759:7680",
+        "2607:7700:0:27:0:2:a759:7b36",
+        "2607:7700:0:27:0:2:a759:7b3a",
+        "2607:7700:0:27:0:2:a759:7b3e",
+        "2607:7700:0:27:0:2:a759:7b42",
+        "2607:7700:0:27:0:2:a759:7b59",
+        "2607:7700:0:27:0:2:a759:7b5a",
+        "2607:7700:0:27:0:2:a759:7b7c",
+        "2607:7700:0:27:0:2:a759:7bcc"
+      ],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:43:37.066216+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624mail.evilcorp.com",
+      "resolved_hosts": ["233.11.201.238", "2607:7700:0:27:0:2:c01f:f232"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:36.732342+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600mail.evilcorp.com",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:36.737548+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mail.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:43:56.824020+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mail.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:24.636829+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "autodiscover.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:24.636343+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624mail.evilcorp.com",
+      "resolved_hosts": ["233.11.201.238", "2607:7700:0:27:0:2:c01f:f232"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:24.637686+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "files.mail.evilcorp.com",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296", "mail.evilcorp.com"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:24.637330+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mail.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:25.423872+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "stargate.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.005139+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "stargate.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.267377+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600mail.evilcorp.com",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.290162+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "connect.evilcorp.com",
+      "resolved_hosts": [
+        "130.157.229.234",
+        "2607:7700:0:27:0:2:c01f:f2c8",
+        "gp-connect.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.515021+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "connect-east.evilcorp.com",
+      "resolved_hosts": ["156.107.83.77", "2607:7700:0:27:0:2:c01f:f3d8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.517716+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "connect-west.evilcorp.com",
+      "resolved_hosts": ["130.157.229.234", "2607:7700:0:27:0:2:c01f:f2c8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.517161+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "send.evilcorp.com",
+      "resolved_hosts": ["67.84.247.196", "2607:7700:0:27:0:2:c01f:f2a6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.791770+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "odyssey-west.evilcorp.com",
+      "resolved_hosts": ["206.51.181.192", "2607:7700:0:27:0:2:c01f:f2cd"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.938251+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "odyssey.evilcorp.com",
+      "resolved_hosts": [
+        "206.51.181.192",
+        "2607:7700:0:27:0:2:c01f:f2cd",
+        "gp-odyssey.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:26.939006+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "gp-odyssey.usgovtrafficmanager.net",
+      "resolved_hosts": ["206.51.181.192", "2607:7700:0:27:0:2:c01f:f2cd"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:44:27.255488+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "odyssey-east.evilcorp.com",
+      "resolved_hosts": ["236.169.51.101", "2607:7700:0:27:0:2:c01f:f3d1"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:27.342619+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "rideshare.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.111414+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600mail.evilcorp.com",
+      "resolved_hosts": ["19.139.97.154", "2607:7700:0:27:0:2:c01f:f296"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.110309+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx4.evilcorp.com",
+      "resolved_hosts": ["108.107.224.195", "2607:7700:0:27:0:2:c01f:f21f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.109933+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "iss-sim.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.109183+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "url427.evilcorp.com",
+      "resolved_hosts": [
+        "17.23.57.136",
+        "53.39.51.98",
+        "99.208.195.188",
+        "252.229.249.39",
+        "120.123.190.199",
+        "215.58.174.252",
+        "106.73.215.30",
+        "153.207.243.62",
+        "86.240.200.66",
+        "227.101.13.117",
+        "191.68.199.184",
+        "129.192.44.247",
+        "188.168.230.136",
+        "81.186.9.134",
+        "205.160.79.156",
+        "74.156.73.131",
+        "2607:7700:0:27:0:2:a759:7634",
+        "2607:7700:0:27:0:2:a759:763d",
+        "2607:7700:0:27:0:2:a759:763e",
+        "2607:7700:0:27:0:2:a759:7653",
+        "2607:7700:0:27:0:2:a759:765f",
+        "2607:7700:0:27:0:2:a759:766d",
+        "2607:7700:0:27:0:2:a759:7678",
+        "2607:7700:0:27:0:2:a759:7680",
+        "2607:7700:0:27:0:2:a759:7b36",
+        "2607:7700:0:27:0:2:a759:7b3a",
+        "2607:7700:0:27:0:2:a759:7b3e",
+        "2607:7700:0:27:0:2:a759:7b42",
+        "2607:7700:0:27:0:2:a759:7b59",
+        "2607:7700:0:27:0:2:a759:7b5a",
+        "2607:7700:0:27:0:2:a759:7b7c",
+        "2607:7700:0:27:0:2:a759:7bcc",
+        "sendgrid.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.109554+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx6.evilcorp.com",
+      "resolved_hosts": ["13.92.203.131", "2607:7700:0:27:0:2:c01f:f221"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.110669+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx2.evilcorp.com",
+      "resolved_hosts": ["216.69.121.1902", "2607:7700:0:27:0:2:c01f:f2b6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.108813+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600adfs.evilcorp.com",
+      "resolved_hosts": ["219.83.175.205", "2607:7700:0:27:0:2:c01f:f291"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.108444+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "shop.evilcorp.com",
+      "resolved_hosts": ["177.43.29.245", "2620:127:f00f:e::", "shops.myshopify.com"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.173599+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "send.evilcorp.com",
+      "resolved_hosts": ["67.84.247.196", "2607:7700:0:27:0:2:c01f:f2a6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.174320+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600-sbc-teams.evilcorp.com",
+      "resolved_hosts": ["143.184.246.86", "2607:7700:0:27:0:2:c01f:f2b8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.111056+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "returns.evilcorp.com",
+      "resolved_hosts": ["domains.returnly.com"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.108026+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "vpn-test.evilcorp.com",
+      "resolved_hosts": ["130.157.229.234", "2607:7700:0:27:0:2:c01f:f2c8"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.174680+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624auth.evilcorp.com",
+      "resolved_hosts": ["144.192.47.95", "2607:7700:0:27:0:2:c01f:f22c"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.111786+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600send.evilcorp.com",
+      "resolved_hosts": ["137.91.102.229", "2607:7700:0:27:0:2:c01f:f2b0"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.172050+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la600auth.evilcorp.com",
+      "resolved_hosts": ["69.86.253.138", "2607:7700:0:27:0:2:c01f:f290"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.172445+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "lyncdiscover.evilcorp.com",
+      "resolved_hosts": ["webdir.online.gov.skypeforbusiness.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.172829+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "sip.evilcorp.com",
+      "resolved_hosts": ["sipdir.online.gov.skypeforbusiness.us"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.173240+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624mail.evilcorp.com",
+      "resolved_hosts": ["233.11.201.238", "2607:7700:0:27:0:2:c01f:f232"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.299055+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "customer.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.300294+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx1.evilcorp.com",
+      "resolved_hosts": ["45.50.6.75", "2607:7700:0:27:0:2:c01f:f2b5"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.175429+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "autodiscover.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.299477+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mfatest.evilcorp.com",
+      "resolved_hosts": ["252.94.41.89", "2607:7700:0:27:0:2:c01f:f28f"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.299894+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "adfs.evilcorp.com",
+      "resolved_hosts": [
+        "74.20.50.197",
+        "2607:7700:0:27:0:2:c01f:f22d",
+        "evilcorpadfs.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.461849+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "connect.evilcorp.com",
+      "resolved_hosts": [
+        "130.157.229.234",
+        "2607:7700:0:27:0:2:c01f:f2c8",
+        "gp-connect.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.302203+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mail.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.463607+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "api-rideshare.evilcorp.com",
+      "resolved_hosts": [
+        "191.179.108.44",
+        "2607:7700:0:27:0:2:c7e8:4285",
+        "evilcorp.map.fastly.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.462402+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx3.evilcorp.com",
+      "resolved_hosts": ["174.228.98.135", "2607:7700:0:27:0:2:c01f:f2b7"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.600136+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "www.evilcorp.com",
+      "resolved_hosts": [
+        "131.15.100.68",
+        "2001:489a:3604::7c0",
+        "evilcorp-com-endpoint-f8h4hnh9ardaaycw.z01.azurefd.us"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.597765+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mx5.evilcorp.com",
+      "resolved_hosts": ["238.205.219.94", "2607:7700:0:27:0:2:c01f:f220"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.301047+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "o1.ptr6968.evilcorp.com",
+      "resolved_hosts": ["190.199.26.121", "2607:7700:0:27:0:2:a759:46c1"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.464483+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "supplierportal.evilcorp.com",
+      "resolved_hosts": ["67.84.247.196", "2607:7700:0:27:0:2:c01f:f2a6"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.463999+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "stargate.evilcorp.com",
+      "resolved_hosts": ["6.67.181.203", "2607:7700:0:27:0:2:c01f:f2c9"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.464894+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "www2.evilcorp.com",
+      "resolved_hosts": [
+        "2607:7700:0:27:0:2:23a8:2dd1",
+        "227.140.6.99",
+        "ec2-35-168-45-209.compute-1.amazonaws.com"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.598906+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "auth.evilcorp.com",
+      "resolved_hosts": [
+        "55.136.60.139",
+        "161.187.210.130",
+        "2607:7700:0:27:0:2:c01f:f2e0",
+        "2607:7700:0:27:0:2:c01f:f2e1"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.599368+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "la624adfs.evilcorp.com",
+      "resolved_hosts": ["74.20.50.197", "2607:7700:0:27:0:2:c01f:f22d"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:28.599747+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "myshopify.com",
+      "resolved_hosts": ["76.138.13.5", "2607:7700:0:27:0:2:17e3:2620"],
+      "scope_description": "affiliate",
+      "timestamp": "2025-02-06T17:44:31.112130+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "geoevent.evilcorp.com",
+      "resolved_hosts": ["178.253.100.124", "2607:7700:0:27:0:2:c01f:f2f0"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:32.065673+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "mail.evilcorp.com",
+      "resolved_hosts": [
+        "19.139.97.154",
+        "2607:7700:0:27:0:2:c01f:f296",
+        "evilcorpmail.usgovtrafficmanager.net"
+      ],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:33.896939+00:00"
+    },
+    {
+      "type": "DNS_NAME",
+      "host": "evilcorp.com",
+      "resolved_hosts": ["195.159.30.12", "2001:489a:3103::5a0"],
+      "scope_description": "in-scope",
+      "timestamp": "2025-02-06T17:44:33.897454+00:00"
+    }
+  ]
+}
