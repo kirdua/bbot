@@ -4,6 +4,8 @@ import navbarRoutes from '../utils/navbar_routes'
 import mj1 from '@/assets/images/mj1.png'
 
 const items = navbarRoutes
+const drawer = ref(true)
+const rail = ref(true)
 
 // Set the first route as active by default
 const activeItem = ref(items.length > 0 ? items[0].route : '')
@@ -22,13 +24,24 @@ onMounted(() => {
 
 <template>
   <v-card>
-    <v-navigation-drawer expand-on-hover color="black" rail>
+    <v-navigation-drawer
+      v-model="drawer"
+      :rail="rail"
+      permanent
+      color="black"
+      @click="rail = false"
+    >
       <v-list>
-        <v-list-item
-          :prepend-avatar="mj1"
-          subtitle="sandra_a88@gmail.com"
-          title="Sandra Adams"
-        ></v-list-item>
+        <v-list-item :prepend-avatar="mj1" subtitle="sandra_a88@gmail.com" title="Sandra Adams">
+          <template v-slot:append>
+            <v-btn
+              icon="mdi-chevron-left"
+              class="text-orange"
+              variant="text"
+              @click.stop="rail = !rail"
+            ></v-btn>
+          </template>
+        </v-list-item>
       </v-list>
 
       <v-divider></v-divider>

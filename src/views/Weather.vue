@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onUnmounted } from 'vue'
 import { useWeatherStore } from '@/stores/weather'
 import moment from 'moment' // For formatting sunrise/sunset times
 
@@ -22,6 +22,11 @@ const fetchWeather = async () => {
   await weatherStore.getWeatherByZipCode(zipCode.value)
   loading.value = false
 }
+
+onUnmounted(() => {
+  weatherStore.currentWeather = null
+  weatherStore.errorMessage = ''
+})
 </script>
 
 <template>
