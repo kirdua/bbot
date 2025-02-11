@@ -1,35 +1,30 @@
-# bbot
+# BBot - Vue 3 + Vite Project
 
-This template should help get you started developing with Vue 3 in Vite.
+BBot is a Vue 3 application built with Vite and Vuetify. It provides a seamless and efficient UI for managing weather data and other utilities.
 
-## Recommended IDE Setup
+## 🚀 Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Vue 3 + Vite** for fast development and hot reloading.
+- **Vuetify** for a modern, responsive UI.
+- **Pinia** for state management.
+- **OpenWeather API** integration for real-time weather updates.
+- **ESLint + Prettier** for code consistency and best practices.
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ **Project Setup**
 
-## Project Setup
+Clone the repository and install dependencies:
 
 ```sh
+git clone https://github.com/your-username/bbot.git
+cd bbot
 npm install
+
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
