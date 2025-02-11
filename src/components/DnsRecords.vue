@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, defineEmits } from 'vue'
+import { ref, computed } from 'vue'
 
 const props = defineProps({
   dnsRecords: Array,
@@ -44,7 +44,6 @@ const formattedKeys = computed(() => {
 
 <template>
   <v-card>
-    <!-- Title and Search Bar -->
     <v-card-title class="d-flex align-center pe-2">
       <span class="text-orange mt-n9">
         <v-icon icon="mdi-network-outline"></v-icon> &nbsp; DNS Records
@@ -61,14 +60,17 @@ const formattedKeys = computed(() => {
       />
     </v-card-title>
 
-    <!-- Data Table with proper row selection -->
     <v-data-table
       :items="filteredDnsRecords"
       :headers="headers"
+      :loading="loading"
       item-value="key"
       hover
       @click:row="(_, { item }) => openDetails(item)"
     >
+      <template v-slot:loading>
+        <v-skeleton-loader type="table-row@10"></v-skeleton-loader>
+      </template>
       <template v-slot:item.resolved_hosts="{ item }">
         <span>
           {{ item.resolved_hosts.split(',').slice(0, 2).join(', ') }}

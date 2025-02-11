@@ -16,7 +16,7 @@ const myCustomTheme = {
     'light-grey': '#84848c',
     grey: '#44444c',
     'dark-green': '#232c28',
-    'neon-green': '#29760e',
+    'neon-green': '#28FF00',
     red: '#BD2000',
     'text-orange': '#ec6013',
   },

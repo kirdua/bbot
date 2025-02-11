@@ -3,10 +3,12 @@ import { ref, onMounted } from 'vue'
 import mj1 from '@/assets/images/mj1.png'
 import ScanTimeline from '@/components/ScanTimeline.vue'
 import DnsRecordsTable from '@/components/DnsRecords.vue'
+import { load } from 'webfontloader'
 
 const scanData = ref(null)
 const dnsRecords = ref([])
 const searchQuery = ref('')
+const loadingData = ref(false)
 
 const headers = ref([
   { title: 'Type', key: 'type' },
@@ -17,6 +19,7 @@ const headers = ref([
 
 onMounted(async () => {
   try {
+    loadingData.value = true
     const response = await fetch('/cleaned_bbot.json')
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`)
@@ -27,8 +30,10 @@ onMounted(async () => {
       ...record,
       resolved_hosts: record.resolved_hosts.join(', '),
     }))
+    loadingData.value = false
   } catch (error) {
     console.error('Error loading data:', error)
+    loadingData.value = false
   }
 })
 </script>
@@ -77,6 +82,7 @@ onMounted(async () => {
     <DnsRecordsTable
       :dnsRecords="dnsRecords"
       :headers="headers"
+      :loading="loadingData"
       v-model:searchQuery="searchQuery"
     />
   </v-container>
