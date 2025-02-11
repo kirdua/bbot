@@ -3,19 +3,18 @@ import { ref, onMounted } from 'vue'
 import mj1 from '@/assets/images/mj1.png'
 import ScanTimeline from '@/components/ScanTimeline.vue'
 import DnsRecordsTable from '@/components/DnsRecords.vue'
-import { load } from 'webfontloader'
 
 const scanData = ref(null)
 const dnsRecords = ref([])
 const searchQuery = ref('')
 const loadingData = ref(false)
 
-const headers = ref([
+const headers = [
   { title: 'Type', key: 'type' },
   { title: 'Host', key: 'host' },
   { title: 'Resolved IPs', key: 'resolved_hosts' },
   { title: 'Scope', key: 'scope_description' },
-])
+]
 
 onMounted(async () => {
   try {

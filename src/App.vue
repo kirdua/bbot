@@ -1,11 +1,12 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import Navbar from '@/components/Navbar.vue'
 </script>
 
 <template>
   <v-app>
+    <Navbar />
     <v-main>
-      <navbar v-if="isLoggedIn" />
       <router-view v-slot="{ Component }">
         <component :is="Component"></component>
       </router-view>
