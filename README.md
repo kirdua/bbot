@@ -7,7 +7,7 @@ BBot is a Vue 3 application built with Vite and Vuetify. It provides a seamless 
 - **Vue 3 + Vite** for fast development and hot reloading.
 - **Vuetify** for a modern, responsive UI.
 - **Pinia** for state management.
-- **Scan Preview** integration for mock data for a Scan Preview.
+- **Scan Preview** integration mock data for a Scan Preview.
 - **OpenWeather API** integration for real-time weather updates. To show the possibility to do api versioning.
 - **ESLint + Prettier** for code consistency and best practices.
 
