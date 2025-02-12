@@ -9,8 +9,7 @@ const loading = ref(false)
 
 const weather = computed(() => weatherStore.currentWeather)
 
-// Converts temperature from Kelvin to Celsius
-const formatTemp = (temp) => (temp ? (temp - 273.15).toFixed(1) : '--')
+const formatTemp = (temp) => (temp ? (((temp - 273.15) * 9) / 5 + 32).toFixed(1) : '--')
 
 // Converts Unix timestamp to readable time
 const formatTime = (timestamp) => (timestamp ? moment.unix(timestamp).format('hh:mm A') : '--')
@@ -69,7 +68,7 @@ onUnmounted(() => {
             contain
             height="100"
           ></v-img>
-          <p class="text-h5 font-weight-bold">{{ formatTemp(weather.main?.temp) }}°C</p>
+          <p class="text-h5 font-weight-bold">{{ formatTemp(weather.main?.temp) }}°F</p>
           <p class="text-subtitle-1">{{ weather.weather[0]?.description }}</p>
         </v-card>
       </v-col>
