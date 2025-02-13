@@ -19,6 +19,7 @@ const myCustomTheme = {
     'neon-green': '#28FF00',
     red: '#BD2000',
     'text-orange': '#ec6013',
+    error: '#FF3131',
   },
 }
 
