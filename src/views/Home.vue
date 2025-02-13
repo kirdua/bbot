@@ -57,7 +57,7 @@ onMounted(async () => {
                 ><strong class="text-orange">ID:</strong> {{ scanData.id }}</v-list-item
               >
               <v-list-item v-if="scanData.name">
-                <stron class="text-orange">Name:</stron> {{ scanData.name }}
+                <strong class="text-orange">Name:</strong> {{ scanData.name }}
               </v-list-item>
               <v-list-item v-if="scanData.target && scanData.target.seeds.length">
                 <strong class="text-orange">Target:</strong> {{ scanData.target.seeds[0] }}
